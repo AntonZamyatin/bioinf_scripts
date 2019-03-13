@@ -2,8 +2,8 @@
 
 #SBATCH -o canu%j.out
 #SBATCH -e canu%j.err
-#SBATCH -p short
-#SBATCH -N 10
+#SBATCH -p 128gb
+# SBATCH -N 10
 # SBATCH -n 16
 # SBATCH --cpus-per-task=16
 #SBATCH -D /lustre/groups/cbi/ndata
@@ -23,5 +23,4 @@ canu -p coluzii \
      -d assembled/canu \
      genomeSize=300m \
      useGrid=false \
-     -nanopore-raw 2018_mopti_inbred_5runs.fq > canu_out
-
+     -nanopore-raw 2018_mopti_inbred_5runs.fq > reports/canu_out
