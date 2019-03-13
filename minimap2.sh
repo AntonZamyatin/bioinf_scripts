@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#SBATCH -o flye%j.out
-#SBATCH -e flye%j.err
+#SBATCH -o minimap%j.out
+#SBATCH -e minimap%j.err
 #SBATCH -p short
 # SBATCH -N 4
 # SBATCH -n 64
 # SBATCH --cpus-per-task=32
 #SBATCH -D /lustre/groups/cbi/ndata
-#SBATCH -J flye
+#SBATCH -J minimap
 #SBATCH --export=NONE
 #SBATCH -t 3-00:00:00
 # SBATCH --mem=1k
