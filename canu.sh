@@ -16,6 +16,8 @@
 # SBATCH --array=1-16
 # SBATCH --nice=100
 
+alias sinfo=/c1/apps/canu/v1.6/canu_sinfo.sh
+
 module load canu
 module load jdk/1.8.0
 cd /lustre/groups/cbi/ndata
