@@ -1,2 +1,3 @@
 # bioinf_scripts
-SLURM batch scripts using in bioinformatic project
+My toolset for bioinformatics tasks
+
